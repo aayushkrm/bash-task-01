@@ -13,7 +13,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
  
 
 
-
+```
 "a" -> "asfx"
 
 
@@ -27,7 +27,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
 
 
 "abc.txt.doc" -> "abc.txtsfx.doc"
-
+```
 
 
  
@@ -41,8 +41,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
  
 
 
-```bash
-`./insert_suffix [-d] [-v] [-h] [--] sfx files...` ```
+`./insert_suffix [-d] [-v] [-h] [--] sfx files...`
 
 
 
@@ -53,7 +52,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
  The script should support the following options (keys):
 
 
-
+```
  -h print help message (usage, command syntax, supported options, and arguments)
 
 
@@ -67,6 +66,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
 
 
  -- option and suffix/file names separator
+ ```
 
 
 
@@ -77,7 +77,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
  Execution examples:
 
 
-
+```
 ./insert_suffix -d sfx file*.txt
 
 
@@ -93,8 +93,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
 
 
 ./insert_suffix -- -v *
-
-
+```
 
 (add -v as a suffix to all files in the current directory, silent run, make sure that files started with - are also renamed correctly) and so on.
 
