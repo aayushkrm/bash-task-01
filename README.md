@@ -111,3 +111,38 @@ Additionally, you may
 	
 and other improvements.
 
+## To use this code, you need to save it to a file and make it executable. Here are the steps to do that:
+
+Open a text editor and copy the code into a new file.
+
+Save the file as "insert_suffix.sh".
+
+Open a terminal and navigate to the directory where you saved the file.
+
+Run the following command to make the script executable:
+
+`chmod +x insert_suffix.sh`
+To insert a suffix to the file name before the file's extension, run the following command:
+
+`./insert_suffix.sh [-d] [-v] [-h] [--] suffix files...`
+Here is an explanation of the command and its arguments:
+
+./insert_suffix.sh: This is the name of the script that you want to run.
+[-d]: This is an optional argument that specifies the dry run option. If this option is set, the script will print the old and new file names without actually renaming the files.
+[-v]: This is an optional argument that specifies the verbose option. If this option is set, the script will print the old and new names of renamed files.
+[-h]: This is an optional argument that specifies the help option. If this option is set, the script will print a help message and exit.
+[--]: This is an optional argument that is used as a separator between the suffix and the file list.
+suffix: This is the suffix that you want to insert into the file names.
+files...: This is the list of files that you want to rename.
+Here are some examples of how to use the script:
+
+To add "sfx" as a suffix to all files in the current directory with the .txt extension, run the following command in dry run mode:
+
+`./insert_suffix.sh -d sfx file*.txt`
+To add "sfx" as a suffix to all files in the current directory, run the following command in verbose mode:
+
+`./insert_suffix.sh -v sfx -- *`
+To add "-v" as a suffix to all files in the current directory, run the following command in silent mode:
+
+`./insert_suffix.sh -- -v *`
+Note: The script will exit with a non-zero status if there are any errors, such as invalid arguments or missing files. It will also print error messages to the error stream to help you troubleshoot the problem.
