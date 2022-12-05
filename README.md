@@ -81,7 +81,7 @@ and other improvements.
 
 Open a text editor and copy the code into a new file.
 
-Save the file as "insert_suffix.sh".
+Save the file as `insert_suffix.sh`.
 
 Open a terminal and navigate to the directory where you saved the file.
 
