@@ -1,4 +1,4 @@
-#Task #1.
+# Task #1.
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-##Write a script renaming files by inserting a suffix to the file name before the file's extension. For example, if the suffix is "sfx", the renaming should be done in the following way: 
+## Write a script renaming files by inserting a suffix to the file name before the file's extension. For example, if the suffix is "sfx", the renaming should be done in the following way: 
 
 
 
