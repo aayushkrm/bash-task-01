@@ -120,4 +120,4 @@ For more information about the script's options and usage, run the script with t
 
 `./insert_suffix.sh -h`
 
-## Note: The script will exit with a non-zero status if there are any errors, such as invalid arguments or missing files. It will also print error messages to the error stream to help you troubleshoot the problem.
+### Note: The script will exit with a non-zero status if there are any errors, such as invalid arguments or missing files. It will also print error messages to the error stream to help you troubleshoot the problem.
