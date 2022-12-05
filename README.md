@@ -41,7 +41,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
  
 
 
-
+```javascript
 `./insert_suffix [-d] [-v] [-h] [--] sfx files...`
 
 
