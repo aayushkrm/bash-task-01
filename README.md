@@ -120,11 +120,11 @@ Save the file as "insert_suffix.sh".
 Open a terminal and navigate to the directory where you saved the file.
 
 Run the following command to make the script executable:
-
 `chmod +x insert_suffix.sh`
-To insert a suffix to the file name before the file's extension, run the following command:
 
+To insert a suffix to the file name before the file's extension, run the following command:
 `./insert_suffix.sh [-d] [-v] [-h] [--] suffix files...`
+
 Here is an explanation of the command and its arguments:
 
 ./insert_suffix.sh: This is the name of the script that you want to run.
