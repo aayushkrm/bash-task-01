@@ -2,39 +2,39 @@
 
 Write a script renaming files by inserting a suffix to the file name before the file's extension. For example, if the suffix is "sfx", the renaming should be done in the following way: 
 
-```
-"a" -> "asfx"
+	```
+	"a" -> "asfx"
 
 
 
-"a.txt" -> "asfx.txt"
+	"a.txt" -> "asfx.txt"
 
 
 
-"abc.doc" -> "abcsfx.doc"
+	"abc.doc" -> "abcsfx.doc"
 
 
 
-"abc.txt.doc" -> "abc.txtsfx.doc"
-```
+	"abc.txt.doc" -> "abc.txtsfx.doc"
+	```
 
 , etc. The suffix is the first script argument followed by the renamed file list. Syntax:
 
 
-`./insert_suffix [-d] [-v] [-h] [--] sfx files...`
+	`./insert_suffix [-d] [-v] [-h] [--] sfx files...`
 
 The script should support the following options (keys):
 
 
-```
- -h print help message (usage, command syntax, supported options, and arguments)
+	```
+	 -h print help message (usage, command syntax, supported options, and arguments)
 
- -d "dry run", print old and new file names without actual renaming
+	 -d "dry run", print old and new file names without actual renaming
 
- -v print old and new names of renamed files (without the options script act silently)
+	 -v print old and new names of renamed files (without the options script act silently)
 
- -- option and suffix/file names separator
- ```
+	 -- option and suffix/file names separator
+	 ```
 
 
 Take into account that filenames and the suffix may contain shell metacharacters including wildcards and start with a minus sign char (-).
@@ -43,23 +43,23 @@ Take into account that filenames and the suffix may contain shell metacharacters
 Execution examples:
 
 
-```
-./insert_suffix -d sfx file*.txt
+	```
+	./insert_suffix -d sfx file*.txt
 
 
 
-(add sfx as a suffix to all files in current directory with .txt extension, dry run)
+	(add sfx as a suffix to all files in current directory with .txt extension, dry run)
 
 
-./insert_suffix -v sfx -- *
+	./insert_suffix -v sfx -- *
 
 
 
-(add sfx as a suffix to all files in the current directory, verbose run, make sure that files started with - are also renamed correctly)
+	(add sfx as a suffix to all files in the current directory, verbose run, make sure that files started with - are also renamed correctly)
 
 
-./insert_suffix -- -v *
-```
+	./insert_suffix -- -v *
+	```
 
 (add -v as a suffix to all files in the current directory, silent run, make sure that files started with - are also renamed correctly) and so on.
 
@@ -81,17 +81,17 @@ and other improvements.
 
 Open a text editor and copy the code into a new file.
 
-Save the file as `insert_suffix.sh`.
+	Save the file as `insert_suffix.sh`.
 
 Open a terminal and navigate to the directory where you saved the file.
 
 Run the following command to make the script executable:
 
-`chmod +x insert_suffix.sh`
+	`chmod +x insert_suffix.sh`
 
 To insert a suffix to the file name before the file's extension, run the following command:
 
-`./insert_suffix.sh [-d] [-v] [-h] [--] suffix files...`
+	`./insert_suffix.sh [-d] [-v] [-h] [--] suffix files...`
 
 Here is an explanation of the command and its arguments:
 
@@ -106,18 +106,18 @@ Here are some examples of how to use the script:
 
 To add "sfx" as a suffix to all files in the current directory with the .txt extension, run the following command in dry run mode:
 
-`./insert_suffix.sh -d sfx file*.txt`
+	`./insert_suffix.sh -d sfx file*.txt`
 
 To add "sfx" as a suffix to all files in the current directory, run the following command in verbose mode:
 
-`./insert_suffix.sh -v sfx -- *`
+	`./insert_suffix.sh -v sfx -- *`
 
 To add "-v" as a suffix to all files in the current directory, run the following command in silent mode:
 
-`./insert_suffix.sh -- -v *`
+	`./insert_suffix.sh -- -v *`
 
 For more information about the script's options and usage, run the script with the "-h" option:
 
-`./insert_suffix.sh -h`
+	`./insert_suffix.sh -h`
 
 ### Note: The script will exit with a non-zero status if there are any errors, such as invalid arguments or missing files. It will also print error messages to the error stream to help you troubleshoot the problem.
