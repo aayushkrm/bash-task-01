@@ -2,7 +2,7 @@
 
 Write a script renaming files by inserting a suffix to the file name before the file's extension. For example, if the suffix is "sfx", the renaming should be done in the following way: 
 
-	```
+	
 	"a" -> "asfx"
 
 
@@ -16,7 +16,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
 
 
 	"abc.txt.doc" -> "abc.txtsfx.doc"
-	```
+	
 
 , etc. The suffix is the first script argument followed by the renamed file list. Syntax:
 
@@ -26,7 +26,7 @@ Write a script renaming files by inserting a suffix to the file name before the 
 The script should support the following options (keys):
 
 
-	```
+	
 	 -h print help message (usage, command syntax, supported options, and arguments)
 
 	 -d "dry run", print old and new file names without actual renaming
@@ -34,7 +34,7 @@ The script should support the following options (keys):
 	 -v print old and new names of renamed files (without the options script act silently)
 
 	 -- option and suffix/file names separator
-	 ```
+	
 
 
 Take into account that filenames and the suffix may contain shell metacharacters including wildcards and start with a minus sign char (-).
@@ -43,7 +43,7 @@ Take into account that filenames and the suffix may contain shell metacharacters
 Execution examples:
 
 
-	```
+	
 	./insert_suffix -d sfx file*.txt
 
 
@@ -59,7 +59,7 @@ Execution examples:
 
 
 	./insert_suffix -- -v *
-	```
+	
 
 (add -v as a suffix to all files in the current directory, silent run, make sure that files started with - are also renamed correctly) and so on.
 
